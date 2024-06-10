@@ -1,0 +1,9 @@
+requests
+selenium
+pandas
+beautifulsoup4
+jupyterlab
+seaborn
+matplotlib
+pygwalker
+nbconvert
