@@ -29,13 +29,15 @@ Se sugiere crear un entorno virtual haciendo uso de virtualenv para la ejecució
 
 *   pip install virtualenv
 
-- Creación de Ambiente Virtual
+- Creación de Ambiente Virtual, comando:
 
 *   virtualenv <env_name>
+*   Ejemplo: virtualenv python_project
 
-- Activación del Ambiente Virtual
+- Activación del Ambiente Virtual, comando:
 
 *   <env_name>\Scripts\activate
+*   Ejemplo: .\python_project\Scripts\activate
 
 - Desactivación del Ambiente Virtual
 
@@ -84,4 +86,4 @@ Antes de iniciar tener en cuenta lo descrito en el apartado "Advice", del presen
 *   python -m src.process.process_main
 
 -   Tercera Fase:
--   Ejecutar el notebook que realiza la categorización del campo Precio a fin de mejorar las visualizaciones presentadas según el análisis realizado a los datos.
+-   Ejecutar el notebook que realiza la categorización del campo Precio y visualizar las presentaciones generadas en base a los datos obtenidos.
