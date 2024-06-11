@@ -1,5 +1,5 @@
 ## Proyecto E-Commerce_Analyst: Scraping de Productos
-# Este proyecto realiza un scraping de productos de un sitio web, para luego limpiar, analizar datos para posterior guardar los resultados en archivo CSV.
+# Este proyecto realiza un scraping de productos de un sitio web, para luego limpiar, analizar datos y posteriormente guardar los resultados en archivo CSV.
 # Creado por: Gloria Stefania Panchana Jaramillo
 
 # Advice
