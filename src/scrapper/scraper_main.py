@@ -103,6 +103,11 @@ def execute_simulate_scroll(scroll_count, driver):
     # Return products
     return products
 
+##
+# @brief Esta función permite generar un dataframe en base a un listado para luego guardar los productos en un archivo .CSV
+# @param listado de productos
+# @output Archivo .CSV de productos.
+##
 def list_to_pd_and_save(productos):
     df = pd.DataFrame(productos)
     df.to_csv('data/raw/scraper_products.csv', index= False) # Guardamos los datos en un archivo CSV sin incluir el indice.

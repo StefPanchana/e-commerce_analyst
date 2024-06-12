@@ -3,6 +3,11 @@ import os
 import itertools
 from ..decorator.decorator_main import time_analysis, log_analysis
 
+##
+# @brief Función que permite cargar los productos de una archivo .CSV
+# @param Ruta del archivo local
+# @return Dataframe con productos.
+##
 @log_analysis
 @time_analysis
 def load_data(file_path):
@@ -10,7 +15,11 @@ def load_data(file_path):
     print("Loading Sucessfull")
     return df
 
-
+##
+# @brief Función permite limpiar la columna precio del simbolo ($) y cambia el tipo de dato de la columna a float.
+# @param Dataframe a limpiar.
+# @return Dataframe limpio.
+##
 @log_analysis
 @time_analysis
 def clean_data(df):
@@ -21,7 +30,11 @@ def clean_data(df):
     print("Data cleaned successfully")  
     return df 
 
-
+##
+# @brief Función que presenta un análisis de los registros obtenidos del scraper realizado.
+# @param Dataframe que se analizara.
+# @output Información de los registros presentes.
+##
 @log_analysis
 @time_analysis
 def data_analysis(df):
@@ -47,6 +60,11 @@ def data_analysis(df):
     print(f"Desviación Estandar: {df['price'].std()}")
     print(f"Precio Máximo: {df['price'].max()}")
 
+##
+# @brief Función que guarda en un archivo .CSV los productos luego de realizada la limpieza de registros.
+# @param Dataframe con registros y ruta de salida del archivo .CSV con registros depurados.
+# @output Archivo .CSV generado.
+##
 @log_analysis
 @time_analysis
 def save_data_clean(df, output_path):
